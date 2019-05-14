@@ -1,0 +1,19 @@
+body {
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.banner, footer {
+    background-color: #282F37;
+    height: 8em;;
+}
+
+h1 {  color: #ffffff;}
+
+header {
+    background-color: #37434D;
+    color: #ADBABF;
+}
+
