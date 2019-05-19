@@ -30,7 +30,6 @@ exports.post = (req, res) => {
 
       
       if (error) {
-          console.log(error);
         res.redirect(301, 'contact-failure');
       }
       else {

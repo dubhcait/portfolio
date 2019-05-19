@@ -31,18 +31,11 @@ d3.json("/projects", function(json) {
     }
   }
 
-/*  function toggleAll(d) {
-    if (d.children) {
-      d.children.forEach(toggleAll);
-      toggle(d);
-    }
-  } */
   root.children.forEach(collapse);
   update(root);
 });
 
 function update(source) {
-  // var duration = d3.event && d3.event.altKey ? 5000 : 500;
 
   // Compute the new tree layout.
   var nodes = tree.nodes(root).reverse();
