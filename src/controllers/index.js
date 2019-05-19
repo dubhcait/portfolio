@@ -1,7 +1,9 @@
 const express = require('express');
 // contact form
 const nodemailer = require('nodemailer');
-require("env2")("./config.env");
+ require("env2")("./config.env");
+const GMAIL_USER = process.env.GMAIL_USER;
+const GMAIL_PASS = process.env.GMAIL_PASS;
 
 const home = require('./home');
 const error = require('./error');
@@ -17,9 +19,6 @@ router.get ('/', home.get);
 router.post('/contact', function (req, res) {
     let mailOpts, smtpTrans;
 
-
-
-    console.log("hello fom inside the post", req.body )
     smtpTrans = nodemailer.createTransport({
      
       host: "smtp-mail.outlook.com", // hostname
@@ -29,24 +28,26 @@ router.post('/contact', function (req, res) {
          ciphers:'SSLv3'
       },
       auth: {
-        user: 'dubhcait@live.ie',
-        pass: 
+        user: GMAIL_USER,
+        pass: GMAIL_PASS
       }
     });
     mailOpts = {
       from: req.body.email,
-      to: 'dubhcait@live.ie',
-      subject: 'New message from contact form on your portfolio',
+      to: GMAIL_USER,
+      subject: 'New message from the contact form on your portfolio',
       text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
     };
-    console.log(mailOpts);
+  
     smtpTrans.sendMail(mailOpts, function (error, response) {
+
+      
       if (error) {
           console.log(error);
         res.redirect(301, 'contact-failure');
       }
       else {
-        res.render( 301, 'contact-success');
+        res.redirect( 301, 'contact-success');
       }
     });
   });
