@@ -1,11 +1,10 @@
 const express = require('express');
 // contact form
-const nodemailer = require('nodemailer');
- require("env2")("./config.env");
-const GMAIL_USER = process.env.GMAIL_USER;
-const GMAIL_PASS = process.env.GMAIL_PASS;
+
 
 const home = require('./home');
+const projects = require('./project')
+const contact = require('./contact');
 const error = require('./error');
 
 const app = express();
@@ -15,42 +14,12 @@ const router = express.Router();
 // GET
 router.get ('/', home.get);
 
+// get MOREDATA route
+
+router.get ('/projects', projects.get);
+
 // POST route from contact form
-router.post('/contact', function (req, res) {
-    let mailOpts, smtpTrans;
-
-    smtpTrans = nodemailer.createTransport({
-     
-      host: "smtp-mail.outlook.com", // hostname
-      secureConnection: false, // TLS requires secureConnection to be false
-      port: 587, // port for secure SMTP
-      tls: {
-         ciphers:'SSLv3'
-      },
-      auth: {
-        user: GMAIL_USER,
-        pass: GMAIL_PASS
-      }
-    });
-    mailOpts = {
-      from: req.body.email,
-      to: GMAIL_USER,
-      subject: 'New message from the contact form on your portfolio',
-      text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
-    };
-  
-    smtpTrans.sendMail(mailOpts, function (error, response) {
-
-      
-      if (error) {
-          console.log(error);
-        res.redirect(301, 'contact-failure');
-      }
-      else {
-        res.redirect( 301, 'contact-success');
-      }
-    });
-  });
+router.post('/contact', contact.post );
 
 router.get ('*', error.client);
 router.use(error.server);
