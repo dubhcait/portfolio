@@ -7,14 +7,13 @@ Interested in health tech, cybersecurity and machine learning.
 
 A quick outline of skills and contributions
 Languages	Frameworks/Libraries	Testing	Tools/Others
-Javascript (ES5 & ES6)	Express	Tape	Git and Gitflow
-Node.js	React.js	QUnit	Heroku
-PostgreSQL	Leaflet.js	Supertest	Travis CI
-CSS3	Styled Components	Shot	AWS
-Semantic HTML			Agile methodologies
-SCSS			DialogFlow
+Javascript (ES5 & ES6)	Express	Tape	Git and Github
+Node.js	React.js	Netlify	Heroku
+PostgreSQL	D3.js	Supertest	Jest Travis CI
+CSS3	Styled Components		AWS
+Semantic HTML			Scrum methodologies
+SCSS			Figma
 TDD
-Invision
 
 Projects
 
