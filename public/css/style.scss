@@ -1,0 +1,168 @@
+//SASS autocompile
+
+@import './variables';
+
+body {
+    background-color: $background-color;
+    font-family: $system-font;
+    font-size: $regular-size;
+    color: $font-color;
+}
+
+
+.footer {
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    position: sticky;
+    font-size: $regular-size;
+    padding: $base;
+    color: white;
+    background-color: $background-color-darkest;
+    margin: 0;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+.header {
+    @include alignCenter; 
+    flex-direction: column;
+    color: white;
+    font-family: $decorative-font;
+    font-size: $x-large;
+    background-color: $background-color-darkest;
+    padding: $x-large;
+
+}
+
+
+
+.first { 
+    @include alignCenter;
+    flex-direction: column;
+}
+
+.content { 
+    @include alignCenter;
+    background-color: $background-color-grey;
+   
+    padding: $base $large;
+    border-radius: $border-radius;
+    img {
+        @include bigImg;
+        border-radius: $border-radius;
+    }
+    video{
+        border-radius: $border-radius;
+        @include bigImg;
+    }
+    p{ 
+        font-family: 'Roboto';
+        font-weight: 100;
+    font-size: $base;
+    margin: $base;
+    }
+   }
+
+   #contact-form {
+    display: flex;
+    align-items: center;
+    margin: 1em auto;
+    flex-direction: column;
+    padding: $base;
+    width: fit-content;
+    border: solid $background-color-darker 2px;
+    
+    border-radius: $border-radius; 
+       
+    button{ border-radius: $border-radius; 
+        font-size: $base;
+        margin: $small;
+    padding: $small;}
+    label{font-size: $base;}
+    input,textarea{
+        font-family:$system-font; 
+        border-radius: 0.2em;  
+        font-size: $base;
+        margin: $small;
+    }
+   }
+   
+.project{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.project-header__font{
+    font-size: $large;
+    margin: $base;
+    color: $background-color-darkest;
+}
+
+.faq {
+    display: flex;
+    align-items: center;
+   align-content: center;
+   flex-direction: column;
+   width: 80vw;
+   margin: $base auto;
+   padding: $base $x-large;
+    h5{
+        font-size:  $large;
+        color: $background-color-grey;  
+    }
+}
+.faq__container {
+    display: flex;
+
+
+}
+.faq__question {
+    display: flex; 
+    flex-direction: column;
+ min-width: 20%;
+   margin: $base;
+   padding: $small;
+   
+    color: $background-color-darker;
+   h6{ margin-bottom: $base;
+       font-size: $h2-size;
+       color: $background-color-grey;
+   }
+   p{ font-size: $h3-size;}
+}
+
+
+  
+  .node {
+    cursor: pointer;
+  }
+  
+  .node circle {
+    cursor: pointer;
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+  
+  .node text {
+    font-size: $h4-size;
+    fill: $background-color-darkest;
+  }
+  
+  path.link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1px;
+  }
+  
