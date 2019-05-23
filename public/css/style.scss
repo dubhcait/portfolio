@@ -1,6 +1,9 @@
 //SASS autocompile
 
 @import './variables';
+*{
+    box-sizing: border-box;
+}
 
 body {
     background-color: $background-color;
@@ -9,142 +12,65 @@ body {
     color: $font-color;
 }
 
-
-.footer {
-    display: flex;
-    align-content: flex-end;
-    flex-direction: column;
-    position: sticky;
-    font-size: $regular-size;
-    padding: $base;
-    color: white;
-    background-color: $background-color-darkest;
-    margin: 0;
-    a{
-        text-decoration: none;
-        color: white;
-    }
-}
-
-
 a {
     text-decoration: none;
 }
-
 
 
 .header {
     @include alignCenter; 
     flex-direction: column;
     color: white;
+    width: 100%;
     font-family: $decorative-font;
-    font-size: $x-large;
     background-color: $background-color-darkest;
-    padding: $x-large;
+    padding: $large;
 
-}
+    h1{  font-size: $h1-size;}
+    h3{ font-size: $h2-size; }
 
-
-
-.first { 
-    @include alignCenter;
-    flex-direction: column;
 }
 
 .content { 
+    width: 100%;
     @include alignCenter;
+    flex-direction: column;
     background-color: $background-color-grey;
-   
-    padding: $base $large;
-    border-radius: $border-radius;
+   padding: $tiny 0;
     img {
         @include bigImg;
         border-radius: $border-radius;
+        margin: $tiny;
     }
     video{
         border-radius: $border-radius;
         @include bigImg;
+        margin: $tiny;
     }
-    p{ 
-        font-family: 'Roboto';
-        font-weight: 100;
-    font-size: $base;
-    margin: $base;
+    p{ font-size: $small-size;
+        color: black;
+        margin: $tiny $small;
     }
    }
 
-   #contact-form {
-    display: flex;
-    align-items: center;
-    margin: 1em auto;
-    flex-direction: column;
-    padding: $base;
-    width: fit-content;
-    border: solid $background-color-darker 2px;
-    
-    border-radius: $border-radius; 
-       
-    button{ border-radius: $border-radius; 
-        font-size: $base;
-        margin: $small;
-    padding: $small;}
-    label{font-size: $base;}
-    input,textarea{
-        font-family:$system-font; 
-        border-radius: 0.2em;  
-        font-size: $base;
-        margin: $small;
-    }
-   }
    
-.project{
+   .project{
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 100vw;
 }
-
+#body{
+    width: 100vw;
+}
 .project-header__font{
-    font-size: $large;
     margin: $base;
     color: $background-color-darkest;
 }
 
-.faq {
-    display: flex;
-    align-items: center;
-   align-content: center;
-   flex-direction: column;
-   width: 80vw;
-   margin: $base auto;
-   padding: $base $x-large;
-    h5{
-        font-size:  $large;
-        color: $background-color-grey;  
-    }
-}
-.faq__container {
-    display: flex;
-
-
-}
-.faq__question {
-    display: flex; 
-    flex-direction: column;
- min-width: 20%;
-   margin: $base;
-   padding: $small;
-   
-    color: $background-color-darker;
-   h6{ margin-bottom: $base;
-       font-size: $h2-size;
-       color: $background-color-grey;
-   }
-   p{ font-size: $h3-size;}
-}
-
 
   
-  .node {
+.node {
     cursor: pointer;
   }
   
@@ -156,7 +82,7 @@ a {
   }
   
   .node text {
-    font-size: $h4-size;
+
     fill: $background-color-darkest;
   }
   
@@ -166,3 +92,77 @@ a {
     stroke-width: 1px;
   }
   
+
+
+
+.faq {
+    display: flex;
+    align-items: center;
+   align-content: center;
+   flex-direction: column;
+   width: 100vw;
+   margin: $small auto;
+    h5{  font-size: $h4-size;
+        color: $background-color-grey; 
+        margin-bottom: $tiny; 
+    }
+    &__container {
+        display: flex;
+    }
+}
+
+.faq__question {
+    display: flex; 
+    flex-direction: column;
+    width: 30%;
+    color: $background-color-darker;
+    margin: $tiny;
+
+   h6{ font-size: $small-size;
+       color: $background-color-grey;
+       margin: $tiny;
+   }
+   p{ font-size: $small-size; }
+}
+
+
+   #contact-form {
+    display: flex;
+    align-items: center;
+    margin: 1em auto;
+    flex-direction: column;
+    width: fit-content;
+    border: solid $background-color-darker 2px;
+    
+    border-radius: $border-radius; 
+       
+    button{ border-radius: $border-radius; 
+        margin: $small;}
+    label{  margin: $tiny; }
+    input,textarea{
+        font-family:$system-font; 
+        border-radius: 0.2em; 
+        margin: 0 $tiny; 
+       
+    }
+   }
+
+
+.footer {
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    font-size: $regular-size;
+    color: white;
+    background-color: $background-color-darkest;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+
+
+
+
