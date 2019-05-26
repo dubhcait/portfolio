@@ -39,14 +39,20 @@ $small: 1.8em;
 $base: 2.5em;
 $large: 4em;
 $x-large: 5em;
-
+$xx-large: 7em;
 // border- radius
 
 $border-radius: 0.4em;
+
+@mixin bigerImg {
+    height: 15em;
+    width: 25em;
+}
+
 //logo
 @mixin bigImg {
-    height: 10em;
-    width: 16em;
+    height: 15em;
+    width: 25em;
 }
 
 

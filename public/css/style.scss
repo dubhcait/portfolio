@@ -18,23 +18,37 @@ a {
 
 
 .header {
-    @include alignCenter; 
-    flex-direction: column;
+   display: flex;
+   justify-content:space-evenly;
     color: white;
     width: 100%;
     font-family: $decorative-font;
     background-color: $background-color-darkest;
     padding: $large;
+    padding-left: $base;
 
     h1{  font-size: $h1-size;}
     h3{ font-size: $h2-size; }
+   
+    &_profile {
+    width: $xx-large;
+    height: $xx-large;
+    border-radius: 50%;
+    margin: 1em;
+    margin-top: 0;
+    }
 
 }
 
 .content { 
     width: 100%;
+  max-width: 950px;
     @include alignCenter;
     flex-direction: column;
+
+    @media screen and (min-width: 650px) {
+        flex-direction: row;
+        }
     background-color: $background-color-grey;
    padding: $tiny 0;
     img {
@@ -47,10 +61,15 @@ a {
         @include bigImg;
         margin: $tiny;
     }
-    p{ font-size: $small-size;
+    p{ font-size: $regular-size;
         color: black;
         margin: $tiny $small;
     }
+    @media screen and (min-width: 700px) {
+       
+        p{ font-size: $h4-size;
+        }
+        }
    }
 
    
@@ -125,6 +144,12 @@ a {
    p{ font-size: $small-size; }
 }
 
+.faq-answer {
+    display: none;
+    
+}
+
+.
 
    #contact-form {
     display: flex;
