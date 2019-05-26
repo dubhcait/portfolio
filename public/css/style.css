@@ -184,7 +184,7 @@ path.link {
 .faq h5 {
   font-size: 1.125rem;
   color: #ADBABF;
-  margin-bottom: 0.5em;
+  margin-top: 1.8em;
 }
 
 .faq-container {
@@ -232,9 +232,6 @@ path.link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 1em auto;
   padding: 1.8em;
   -webkit-box-orient: vertical;
@@ -249,12 +246,15 @@ path.link {
 }
 
 #contact-form button {
-  border-radius: 0.4em;
-  margin: 1.8em;
+  border-radius: 0.2em;
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 1.5rem;
+  background-color: rgba(173, 186, 191, 0.4);
 }
 
 #contact-form label {
-  margin: 0.5em 1.8em;
+  margin: 0.5em;
   font-size: 1.5rem;
 }
 

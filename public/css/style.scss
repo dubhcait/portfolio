@@ -141,7 +141,7 @@ a {
    margin: 0 auto;
     h5{  font-size: $h4-size;
         color: $background-color-grey; 
-        margin-bottom: $tiny; 
+        margin-top: $small; 
     }
     &-container {
         display: flex;
@@ -178,7 +178,6 @@ a {
 
    #contact-form {
     display: flex;
-    align-items: center;
     margin: 1em auto;
     padding: $small;
     flex-direction: column;
@@ -188,13 +187,18 @@ a {
     
     border-radius: $border-radius; 
        
-    button{ border-radius: $border-radius; 
-        margin: $small;}
-    label{  margin: $tiny $small; 
+    button{ border-radius: $border-radius-small; 
+        padding: $tiny;
+        margin: $tiny;
+        font-size: $h2-size;
+        background-color: $background-color-light-grey;
+
+    }
+    label{  margin: $tiny; 
         font-size: $h2-size;}
     input,textarea{
         font-family:$system-font; 
-        border-radius: 0.2em; 
+        border-radius:  $border-radius-small; 
         margin: 0 $tiny; 
       width: 40vw;
       font-size: $h2-size;
