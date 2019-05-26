@@ -48,6 +48,7 @@ a {
 .content {
   width: 100%;
   max-width: 950px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,15 +64,6 @@ a {
           flex-direction: column;
   background-color: #ADBABF;
   padding: 0.5em 0;
-}
-
-@media screen and (min-width: 650px) {
-  .content {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
 }
 
 .content img {
@@ -92,6 +84,20 @@ a {
   font-size: 1rem;
   color: black;
   margin: 0.5em 1.8em;
+}
+
+@media screen and (min-width: 650px) {
+  .content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .content .second {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -157,8 +163,10 @@ path.link {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: rgba(173, 186, 191, 0.4);
   width: 100vw;
-  margin: 1.8em auto;
+  max-width: 950px;
+  margin: 0 auto;
 }
 
 .faq h5 {
@@ -167,13 +175,7 @@ path.link {
   margin-bottom: 0.5em;
 }
 
-.faq__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.faq__question {
+.faq-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,23 +183,37 @@ path.link {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 30%;
+  width: 100%;
+  padding: 1.8em;
+}
+
+.faq-question {
+  width: 100%;
+  max-width: 950px;
+  color: #37434D;
+}
+
+.faq-question h6 {
+  font-size: 0.875rem;
   color: #37434D;
   margin: 0.5em;
 }
 
-.faq__question h6 {
-  font-size: 0.875rem;
-  color: #ADBABF;
-  margin: 0.5em;
-}
-
-.faq__question p {
+.faq-question p {
   font-size: 0.875rem;
 }
 
 .faq-answer {
   display: none;
+  margin: 1.8em;
+}
+
+.contact {
+  font-size: 1.5rem;
+  margin: 1.8em auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 #contact-form {
@@ -208,6 +224,7 @@ path.link {
       -ms-flex-align: center;
           align-items: center;
   margin: 1em auto;
+  padding: 1.8em;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -225,13 +242,22 @@ path.link {
 }
 
 #contact-form label {
-  margin: 0.5em;
+  margin: 0.5em 1.8em;
+  font-size: 1.5rem;
 }
 
 #contact-form input, #contact-form textarea {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   border-radius: 0.2em;
   margin: 0 0.5em;
+  width: 40vw;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 650px) {
+  #contact-form input, #contact-form textarea {
+    width: 70vw;
+  }
 }
 
 .footer {

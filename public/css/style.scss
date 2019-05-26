@@ -41,34 +41,44 @@ a {
 }
 
 .content { 
-    width: 100%;
-  max-width: 950px;
-    @include alignCenter;
-    flex-direction: column;
+        width: 100%;
+        max-width: $max-width;
+        margin: 0 auto;
+        @include alignCenter;
+        flex-direction: column;
+        background-color: $background-color-grey;
+        padding: $tiny 0;
 
-    @media screen and (min-width: 650px) {
-        flex-direction: row;
+        
+
+        img {
+            @include bigImg;
+            border-radius: $border-radius;
+            margin: $tiny;
         }
-    background-color: $background-color-grey;
-   padding: $tiny 0;
-    img {
-        @include bigImg;
-        border-radius: $border-radius;
-        margin: $tiny;
-    }
-    video{
-        border-radius: $border-radius;
-        @include bigImg;
-        margin: $tiny;
-    }
-    p{ font-size: $regular-size;
-        color: black;
-        margin: $tiny $small;
-    }
-    @media screen and (min-width: 700px) {
-       
-        p{ font-size: $h4-size;
+        video{
+            border-radius: $border-radius;
+            @include bigImg;
+            margin: $tiny;
         }
+        p{ font-size: $regular-size;
+            color: black;
+            margin: $tiny $small;
+        }
+
+        @media screen and (min-width: 650px) 
+        {
+                flex-direction: row;
+                    .second {
+                        order: 2;
+                        }
+            }
+
+        @media screen and (min-width: 700px) 
+        {
+            p { font-size: $h4-size;
+            }
+        
         }
    }
 
@@ -119,26 +129,30 @@ a {
     align-items: center;
    align-content: center;
    flex-direction: column;
+   background-color: $background-color-light-grey;
    width: 100vw;
-   margin: $small auto;
+   max-width: $max-width;
+   margin: 0 auto;
     h5{  font-size: $h4-size;
         color: $background-color-grey; 
         margin-bottom: $tiny; 
     }
-    &__container {
+    &-container {
         display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: $small;
     }
 }
 
-.faq__question {
-    display: flex; 
-    flex-direction: column;
-    width: 30%;
+.faq-question {
+   
+    width: 100%;
+    max-width: $max-width ;
     color: $background-color-darker;
-    margin: $tiny;
-
+   
    h6{ font-size: $small-size;
-       color: $background-color-grey;
+       color: $background-color-darker;
        margin: $tiny;
    }
    p{ font-size: $small-size; }
@@ -146,29 +160,44 @@ a {
 
 .faq-answer {
     display: none;
-    
+    margin: $small;
+   
 }
 
-.
+.contact {
+    font-size: $h2-size;
+    margin: $small auto;
+    width: fit-content;
+}
 
    #contact-form {
     display: flex;
     align-items: center;
     margin: 1em auto;
+    padding: $small;
     flex-direction: column;
     width: fit-content;
+   
     border: solid $background-color-darker 2px;
     
     border-radius: $border-radius; 
        
     button{ border-radius: $border-radius; 
         margin: $small;}
-    label{  margin: $tiny; }
+    label{  margin: $tiny $small; 
+        font-size: $h2-size;}
     input,textarea{
         font-family:$system-font; 
         border-radius: 0.2em; 
         margin: 0 $tiny; 
+      width: 40vw;
+      font-size: $h2-size;
        
+    }
+    @media screen and (max-width: 650px) {
+        input,textarea{
+            width: 70vw; 
+        }  
     }
    }
 
