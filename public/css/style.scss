@@ -48,7 +48,7 @@ a {
         margin: 0 auto;
         @include alignCenter;
         flex-direction: column;
-        background-color: $background-color-grey;
+        background-color: $background-color-darker;
         padding: $tiny;
 
         
@@ -64,7 +64,7 @@ a {
             margin: $tiny;
         }
         p{ font-size: $regular-size;
-            color: black;
+            color: $font-color;
             margin: $tiny $small;
         }
         @media screen and (max-width: 410px) {
@@ -139,8 +139,14 @@ a {
    width: 100vw;
    max-width: $max-width;
    margin: 0 auto;
+
+ button{
+    @include button;
+ }
+
+
     h5{  font-size: $h4-size;
-        color: $background-color-grey; 
+        color: $background-color-darker; 
         margin-top: $small; 
     }
     &-container {
@@ -187,21 +193,20 @@ a {
     
     border-radius: $border-radius; 
        
-    button{ border-radius: $border-radius-small; 
-        padding: $tiny;
-        margin: $tiny;
-        font-size: $h2-size;
-        background-color: $background-color-light-grey;
+    button{ 
+        margin: $small $tiny;
+        @include button;
 
     }
     label{  margin: $tiny; 
-        font-size: $h2-size;}
+        font-size: $h4-size;}
     input,textarea{
         font-family:$system-font; 
         border-radius:  $border-radius-small; 
         margin: 0 $tiny; 
       width: 40vw;
-      font-size: $h2-size;
+      max-width: 380px;
+      font-size: $h4-size;
        
     }
     @media screen and (max-width: 650px) {

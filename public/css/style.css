@@ -64,7 +64,7 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #ADBABF;
+  background-color: #37434D;
   padding: 0.5em;
 }
 
@@ -84,7 +84,7 @@ a {
 
 .content p {
   font-size: 1rem;
-  color: black;
+  color: #8E9DA5;
   margin: 0.5em 1.8em;
 }
 
@@ -181,9 +181,32 @@ path.link {
   margin: 0 auto;
 }
 
+.faq button {
+  border: 1px solid #d1dcdf;
+  border-radius: 3px;
+  font-size: 12px;
+  font-family: arial, helvetica, sans-serif;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  background-color: #f2f5f6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f5f6), to(#c8d7dc));
+  background-image: linear-gradient(to bottom, #f2f5f6, #c8d7dc);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f2f5f6, endColorstr=#c8d7dc);
+}
+
+.faq button:hover {
+  border: 1px solid #b6c7cc;
+  background-color: #d4dee1;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d4dee1), to(#a9c0c8));
+  background-image: linear-gradient(to bottom, #d4dee1, #a9c0c8);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#d4dee1, endColorstr=#a9c0c8);
+}
+
 .faq h5 {
   font-size: 1.125rem;
-  color: #ADBABF;
+  color: #37434D;
   margin-top: 1.8em;
 }
 
@@ -246,16 +269,32 @@ path.link {
 }
 
 #contact-form button {
-  border-radius: 0.2em;
-  padding: 0.5em;
-  margin: 0.5em;
-  font-size: 1.5rem;
-  background-color: rgba(173, 186, 191, 0.4);
+  margin: 1.8em 0.5em;
+  border: 1px solid #d1dcdf;
+  border-radius: 3px;
+  font-size: 12px;
+  font-family: arial, helvetica, sans-serif;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  background-color: #f2f5f6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f5f6), to(#c8d7dc));
+  background-image: linear-gradient(to bottom, #f2f5f6, #c8d7dc);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f2f5f6, endColorstr=#c8d7dc);
+}
+
+#contact-form button:hover {
+  border: 1px solid #b6c7cc;
+  background-color: #d4dee1;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d4dee1), to(#a9c0c8));
+  background-image: linear-gradient(to bottom, #d4dee1, #a9c0c8);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#d4dee1, endColorstr=#a9c0c8);
 }
 
 #contact-form label {
   margin: 0.5em;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
 }
 
 #contact-form input, #contact-form textarea {
@@ -263,7 +302,8 @@ path.link {
   border-radius: 0.2em;
   margin: 0 0.5em;
   width: 40vw;
-  font-size: 1.5rem;
+  max-width: 380px;
+  font-size: 1.125rem;
 }
 
 @media screen and (max-width: 650px) {
