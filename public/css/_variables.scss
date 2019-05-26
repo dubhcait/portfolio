@@ -47,9 +47,9 @@ $max-width: 950px;;
 
 $border-radius: 0.4em;
 
-@mixin bigerImg {
-    height: 15em;
-    width: 25em;
+@mixin smallImg {
+    height: 13em;
+    width: 20em;
 }
 
 //logo

@@ -23,6 +23,8 @@ a {
           justify-content: space-evenly;
   color: white;
   width: 100%;
+  margin: 0 auto;
+  max-width: 950px;
   font-family: "Abril Fatface", Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   background-color: #282F37;
   padding: 4em;
@@ -63,7 +65,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #ADBABF;
-  padding: 0.5em 0;
+  padding: 0.5em;
 }
 
 .content img {
@@ -86,6 +88,13 @@ a {
   margin: 0.5em 1.8em;
 }
 
+@media screen and (max-width: 410px) {
+  .content img, .content video {
+    height: 13em;
+    width: 20em;
+  }
+}
+
 @media screen and (min-width: 650px) {
   .content {
     -webkit-box-orient: horizontal;
@@ -101,6 +110,9 @@ a {
 }
 
 @media screen and (min-width: 700px) {
+  .content {
+    padding: 1.8em;
+  }
   .content p {
     font-size: 1.125rem;
   }
@@ -270,8 +282,11 @@ path.link {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 auto;
+  max-width: 950px;
   font-size: 1rem;
   color: white;
+  padding: 0.5em;
   background-color: #282F37;
 }
 
