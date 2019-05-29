@@ -3,7 +3,8 @@ const express = require('express');
 
 
 const home = require('./home');
-const projects = require('./project')
+const projects = require('./project');
+const projectsMobile = require('./project-mobile');
 const contact = require('./contact');
 const error = require('./error');
 
@@ -17,6 +18,7 @@ router.get ('/', home.get);
 // get MOREDATA route
 
 router.get ('/projects', projects.get);
+router.get ('/mobile', projectsMobile.get);
 
 // POST route from contact form
 router.post('/contact', contact.post );

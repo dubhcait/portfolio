@@ -129,7 +129,19 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 auto;
   width: 100vw;
+  background-color: #ADBABF;
+  padding: 1.8em;
+}
+
+@media screen and (min-width: 1650px) {
+  .project {
+    padding: 1.8em;
+    width: 80vw;
+    max-width: 950px;
+    background-color: #F4F4F4;
+  }
 }
 
 #body {
@@ -184,8 +196,6 @@ path.link {
 .faq button {
   border: 1px solid #d1dcdf;
   border-radius: 3px;
-  font-size: 12px;
-  font-family: arial, helvetica, sans-serif;
   padding: 10px 10px 10px 10px;
   text-decoration: none;
   display: inline-block;
@@ -272,8 +282,6 @@ path.link {
   margin: 1.8em 0.5em;
   border: 1px solid #d1dcdf;
   border-radius: 3px;
-  font-size: 12px;
-  font-family: arial, helvetica, sans-serif;
   padding: 10px 10px 10px 10px;
   text-decoration: none;
   display: inline-block;

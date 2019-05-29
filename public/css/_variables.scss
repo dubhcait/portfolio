@@ -66,7 +66,10 @@ $border-radius-small: 0.2em;
 }
 
 @mixin button {
- border:1px solid #d1dcdf; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:12px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;font-weight:bold;
+ border:1px solid #d1dcdf; -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+ padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;font-weight:bold;
         background-color: #f2f5f6; background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f5f6), to(#c8d7dc));
         background-image: -webkit-linear-gradient(top, #f2f5f6, #c8d7dc);
         background-image: -moz-linear-gradient(top, #f2f5f6, #c8d7dc);
