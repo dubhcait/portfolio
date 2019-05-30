@@ -131,11 +131,10 @@ a {
           flex-direction: column;
   margin: 0 auto;
   width: 100vw;
-  background-color: #ADBABF;
   padding: 1.8em;
 }
 
-@media screen and (min-width: 1650px) {
+@media screen and (min-width: 700px) {
   .project {
     padding: 1.8em;
     width: 80vw;
@@ -148,9 +147,122 @@ a {
   width: 100vw;
 }
 
+@media screen and (max-width: 700px) {
+  #body {
+    display: none;
+  }
+}
+
 .project-header__font {
-  margin: 2.5em;
+  margin: 0.5em;
+  font-weight: bold;
+  font-size: 1.5rem;
   color: #282F37;
+}
+
+.mobile {
+  display: none;
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+  .mobile {
+    display: inline;
+    background-color: #ADBABF;
+  }
+}
+
+.mobile .content-m {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ADBABF;
+  padding: 0.5em;
+}
+
+.mobile .content-m img {
+  height: 15em;
+  width: 25em;
+  border-radius: 0.4em;
+  margin: 0.5em;
+}
+
+.mobile .content-m video {
+  border-radius: 0.4em;
+  height: 15em;
+  width: 25em;
+  margin: 0.5em;
+}
+
+.mobile .content-m div {
+  margin: 0.5em 1.8em;
+  color: #fff;
+}
+
+.mobile .content-m div a {
+  font-weight: bold;
+  padding: 0.5em;
+  color: #fff;
+}
+
+.mobile .content-m div a:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.mobile .content-m div p {
+  font-size: 1rem;
+}
+
+.mobile .content-m div h3 {
+  font-size: 1.125rem;
+  margin: 0.5em 0;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 410px) {
+  .mobile .content-m img, .mobile .content-m video {
+    height: 13em;
+    width: 20em;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .mobile .content-m {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .mobile .content-m .second {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .mobile .content-m {
+    padding: 1.8em;
+  }
+  .mobile .content-m p {
+    font-size: 1.125rem;
+  }
 }
 
 .node {
