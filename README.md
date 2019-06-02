@@ -122,15 +122,24 @@ github repo: https://github.com/dubhcait/week3-team-pokedex
 website: https://fac-sixteen.github.io/week3-team-pokedex/
 
 ### Building Blocks
+![](https://i.imgur.com/EaeIro2.jpg)
 Application for Founders and Coders
+
 Software: HTML JS CSS
+
 github repo: https://github.com/dubhcait/building-blocks.github.io
+
 website: https://dubhcait.github.io/building-blocks.github.io/
 
 ### Javascript Calculator
+![](https://i.imgur.com/Zknp5pF.png)
+
 Prerequisite for Founders and coders
+
 Software: JS, HTML, CSS
+
 github repo: https://github.com/dubhcait/jsCalc
+
 website: https://dubhcait.github.io/jsCalc/
 
 ### CSS and animation mini projects
