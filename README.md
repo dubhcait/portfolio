@@ -5,31 +5,42 @@ This is my personal cv, please feel free to check it out: https://kateportfolio.
 
 Further information on projects I have done is below. 
 
-Projects
+## Projects
 
-Smoothie bar
+
+
+### Dish
+![](https://i.imgur.com/wjKlKEd.png)
+oneliner:
+Software:
+github repo: 
+website:
+
+Tiltle:
+oneliner:
+Software:
+github repo: 
+website:
+
+### Smoothie bar
+
+![](https://i.imgur.com/G2cx6xm.png)
 A FAC week 8 project build over a day and a half, by a team of 4. 
 Software: Postgres, Express, CSS variables, Database Testing
-github repo: https://github.com/dubhcait/Smoothie-bar
-website: https://smoothiebar.herokuapp.com/
+Github repo: https://github.com/dubhcait/Smoothie-bar
+Website: https://smoothiebar.herokuapp.com/
 
-facQuotes
+### facQuotes
+![](https://i.imgur.com/ZrLbO7m.png)
+![](https://i.imgur.com/oNK3LuB.png)
 A personal project to gather quotes about Founders and coders, that will display automatically.
 Software: Postgres, Express 
-github repo: https://github.com/dubhcait/facQuotes 
-website: not online
+Github repo: https://github.com/dubhcait/facQuotes 
+Website: not online
 
-Search Icon
-CSS tranformation of a search icon to contain a search box
-Software: CSS, HTML
-github repo: https://github.com/dubhcait/searchAn
-website: https://dubhcait.github.io/searchAn/
 
-Typing animation
-A typing animation
-Software: JS CSS HTML
-github repo: https://github.com/dubhcait/typingAn
-website: https://dubhcait.github.io/typingAn/
+
+
 
 3D Dice
 Two 3d dice that roll on click
@@ -51,7 +62,8 @@ Software: JS, HTML, CSS, tape, istanbul- coverage
 github repo: https://github.com/dubhcait/sparks-todo
 website: https://fac-sixteen.github.io/sparks-todo/
 
-NewsRUs
+### NewsRUs
+![](https://i.imgur.com/1Z4ayCE.png)
 NewsRUs is a website that enables users to quickly search the guardian website and return a filtered list of Guardian news articles.
 Software: We used https://open-platform.theguardian.com/ API. Node.js Heroku.
 github repo: https://github.com/dubhcait/Week5-purple-sloths 
@@ -99,16 +111,19 @@ Software: JS, HTML, CSS
 github repo: https://github.com/dubhcait/jsCalc
 website: https://dubhcait.github.io/jsCalc/
 
-Tiltle:
-oneliner:
-Software:
-github repo: 
-website:
+#### Search Icon
+![](https://i.imgur.com/knRcycS.png)
+CSS tranformation of a search icon to contain a search box
+Software: CSS, HTML
+github repo: https://github.com/dubhcait/searchAn
+website: https://dubhcait.github.io/searchAn/
 
-Tiltle:
-oneliner:
-Software:
-github repo: 
-website:
+#### Typing animation
+![](https://i.imgur.com/cOP8Sic.png)
+A typing animation
+Software: JS CSS HTML
+github repo: https://github.com/dubhcait/typingAn
+website: https://dubhcait.github.io/typingAn/
+
 
 Best way to get in contact is via email: dubhcait@live.ie
