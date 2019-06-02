@@ -78,8 +78,13 @@ Software: We used https://open-platform.theguardian.com/ API. Node.js Heroku.
 Github repo: https://github.com/dubhcait/Week5-purple-sloths 
 website: https://calm-fjord-11755.herokuapp.com/
 
-Sparks
+### Sparks
+![](https://i.imgur.com/1Vdjmj4.png)
+
+![](https://i.imgur.com/6LN4Pxb.png)
+
 FAC First week project 
+
 Software: HTML, CSS, JS
 
 github repo: https://github.com/dubhcait/Sparks
@@ -87,7 +92,11 @@ github repo: https://github.com/dubhcait/Sparks
 website: https://fac-sixteen.github.io/Sparks/
 
 ### Photo editor
+
+![](https://i.imgur.com/KsWe92G.png)
+
 A persnal project to alter image colour with filters
+
 Software: HTML, JS, CSS
 
 github repo: https://github.com/dubhcait/photoEditor
