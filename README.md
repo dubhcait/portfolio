@@ -8,6 +8,11 @@ Further information on projects I have done is below.
 ## Projects
 
 
+Tiltle:
+oneliner:
+Software:
+github repo: 
+website:
 
 ### Dish
 ![](https://i.imgur.com/wjKlKEd.png)
@@ -16,11 +21,6 @@ Software:
 github repo: 
 website:
 
-Tiltle:
-oneliner:
-Software:
-github repo: 
-website:
 
 ### Smoothie bar
 
@@ -43,10 +43,6 @@ Github repo: https://github.com/dubhcait/facQuotes
 Website: not online
 
 
-
-
-
-
 ### Lost and FAC
 
 ![](https://i.imgur.com/RmGF1fu.png)
@@ -60,7 +56,36 @@ website: http://lost-and-fac.herokuapp.com/
       http://lost-and-fac.herokuapp.com//public/login.html 
 
 
-### Sparks To Do App
+### NewsRUs
+![](https://i.imgur.com/1Z4ayCE.png)
+NewsRUs is a website that enables users to quickly search the guardian website and return a filtered list of Guardian news articles.
+Software: We used https://open-platform.theguardian.com/ API. Node.js Heroku.
+
+Github repo: https://github.com/dubhcait/Week5-purple-sloths 
+website: https://calm-fjord-11755.herokuapp.com/
+
+
+### Rosmarinus
+![](https://i.imgur.com/Dn2hJp0.png)
+Rosmarin is a website/widget that enables users to quickly find and select words from a list of suggestions, as they type. 
+
+Software: We used https://trefle.io/ API.
+
+github repo: https://github.com/dubhcait/week4-team-pokedex
+
+website: https://rosmarinus.herokuapp.com/
+
+### Pokesign
+![](https://i.imgur.com/UlkCgEz.png)
+Our task was to create a single page website that accessed two different api's, and used them to render information on the page utilising the DOM.
+
+Software: The Api's we decided to use were the pokeApi and a horoscope api.
+
+github repo: https://github.com/dubhcait/week3-team-pokedex
+
+website: https://fac-sixteen.github.io/week3-team-pokedex/
+
+### To Do App
 ![](https://i.imgur.com/uVcAhL1.png)
 
 To do app made with TDD method, is dyslexic friendly.
@@ -69,14 +94,6 @@ Software: JS, HTML, CSS, tape, istanbul- coverage
 Github repo: https://github.com/dubhcait/sparks-todo
 
 website: https://fac-sixteen.github.io/sparks-todo/
-
-### NewsRUs
-![](https://i.imgur.com/1Z4ayCE.png)
-NewsRUs is a website that enables users to quickly search the guardian website and return a filtered list of Guardian news articles.
-Software: We used https://open-platform.theguardian.com/ API. Node.js Heroku.
-
-Github repo: https://github.com/dubhcait/Week5-purple-sloths 
-website: https://calm-fjord-11755.herokuapp.com/
 
 ### Sparks
 ![](https://i.imgur.com/1Vdjmj4.png)
@@ -91,45 +108,6 @@ github repo: https://github.com/dubhcait/Sparks
 
 website: https://fac-sixteen.github.io/Sparks/
 
-### Photo editor
-
-![](https://i.imgur.com/KsWe92G.png)
-
-A persnal project to alter image colour with filters
-
-Software: HTML, JS, CSS
-
-github repo: https://github.com/dubhcait/photoEditor
-
-website: https://dubhcait.github.io/photoEditor/
-
-### Random Dice roll
-A personal project
-Software: HTML, CSS, JS
-github repo: https://github.com/dubhcait/dice
-website: https://dubhcait.github.io/dice/
-
-### Rosmarinus
-Rosmarin is a website/widget that enables users to quickly find and select words from a list of suggestions, as they type. 
-Software: We used https://trefle.io/ API.
-github repo: https://github.com/dubhcait/week4-team-pokedex
-website: https://rosmarinus.herokuapp.com/
-
-### Pokesign
-Our task was to create a single page website that accessed two different api's, and used them to render information on the page utilising the DOM.
-Software: The Api's we decided to use were the pokeApi and a horoscope api.
-github repo: https://github.com/dubhcait/week3-team-pokedex
-website: https://fac-sixteen.github.io/week3-team-pokedex/
-
-### Building Blocks
-![](https://i.imgur.com/EaeIro2.jpg)
-Application for Founders and Coders
-
-Software: HTML JS CSS
-
-github repo: https://github.com/dubhcait/building-blocks.github.io
-
-website: https://dubhcait.github.io/building-blocks.github.io/
 
 ### Javascript Calculator
 ![](https://i.imgur.com/Zknp5pF.png)
@@ -141,6 +119,38 @@ Software: JS, HTML, CSS
 github repo: https://github.com/dubhcait/jsCalc
 
 website: https://dubhcait.github.io/jsCalc/
+
+### Random Dice roll
+![](https://i.imgur.com/Tuwz9TK.png)
+A personal project where six random dice rolls are generated.
+
+Software: HTML, CSS, JS
+
+github repo: https://github.com/dubhcait/dice
+
+website: https://dubhcait.github.io/dice/
+
+### Building Blocks
+![](https://i.imgur.com/EaeIro2.jpg)
+Application for Founders and Coders
+
+Software: HTML JS CSS
+
+github repo: https://github.com/dubhcait/building-blocks.github.io
+
+website: https://dubhcait.github.io/building-blocks.github.io/
+
+### Photo editor
+
+![](https://i.imgur.com/KsWe92G.png)
+
+A persnal project to alter image colour with filters
+
+Software: HTML, JS, CSS
+
+github repo: https://github.com/dubhcait/photoEditor
+
+website: https://dubhcait.github.io/photoEditor/
 
 ### CSS and animation mini projects
 
