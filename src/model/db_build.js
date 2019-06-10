@@ -10,6 +10,7 @@ DROP TABLE IF EXISTS projects CASCADE;
 CREATE TABLE projects (
     id SERIAL PRIMARY KEY,
     project VARCHAR(100) NOT NULL,
+    software TEXT NOT NULL,
     project_url VARCHAR(200) NOT NULL,
     project_github VARCHAR(200) NOT NULL,
     description TEXT NOT NULL,
@@ -17,13 +18,13 @@ CREATE TABLE projects (
     team_project VARCHAR(20) NOT NULL
 );
 
-INSERT INTO projects (project,  project_url,  project_github, description, img_src, team_project )
+INSERT INTO projects (project, software, project_github, project_url, description, img_src, team_project )
 VALUES
-    ('Javascript Calculator', 'https://dubhcait.github.io/jsCalc/', 'https://github.com/dubhcait/jsCalc', 'This is a Javascript Calculator. It has javascript functionality built on a HTML and CSS base.', 'https://i.imgur.com/orkva5t.png' , 'no'),
-   ('Pokesign', 'https://fac-sixteen.github.io/week3-team-pokedex/', 'https://github.com/dubhcait/week3-team-pokedex', 'Our task was to create a single page website that accessed the pokeApi and a horoscope api, and used them to render information on the page utilising the DOM.', 'tbc', 'yes'),
-   ('Dice roll', 'https://github.com/dubhcait/dice', 'https://dubhcait.github.io/dice/', 'Roll the 6 dice and get random results. The inspiration for this was taken from a morning workshop in FAC.', 'tbc' , 'no'),
-   ('Rosmarinus', 'https://github.com/dubhcait/week4-team-pokedex', 'https://rosmarinus.herokuapp.com/', 'Rosmarin is a website/widget that enables users to quickly find and select words from a list of suggestions, as they type. The list is dynamically generated from a pre-populated list of values of plant names','tbc', 'yes'),
-  ('NewsRUs', 'https://github.com/dubhcait/Week5-purple-sloths', 'https://dubhcait.github.io/3droll/.', 'NewsRUs is a website that enables users to quickly search the guardian website and return a filtered list of Guardian news articles.','tbc', 'yes');
+    ('Smoothie bar', 'Postgres, Express', 'https://github.com/dubhcait/Smoothie-bar', 'https://smoothiebar.herokuapp.com/','A FAC week 8 project build over a day and a half, by a team of 4. ', 'https://i.imgur.com/xbUjZ5a.png' , 'yes'),
+   ('Dish', 'Postgres, Express, handlebars', 'https://github.com/FAC-Sixteen/dish','https://community-dish.herokuapp.com/',  'A food sharing app to bring people together and reduce food wastage.A FAC student project build.', 'https://i.imgur.com/wjKlKEd.png', 'yes'),
+   ('The-Long-Grass', 'React',  'https://github.com/FAC-Sixteen/RK-The-Long-Grass', 'https://the-long-grass.netlify.com/', 'Ready for a Poké Adventure? The long grass is waiting. This is a pokémon where you capture pokemon by clicking.', 'https://i.imgur.com/shsS0Pg.png' , 'yes'),
+   ('FacQuotes', 'Postgres, Express', 'https://github.com/dubhcait/facQuotes', 'https://facquotes.herokuapp.com/', 'A personal project to gather quotes about Founders and coders, that will display automatically. Software: Postgres, Express','https://i.imgur.com/ZrLbO7m.png', 'yes'),
+  ('NewsRUs', 'Node.js Heroku', 'https://github.com/dubhcait/Week5-purple-sloths', 'https://calm-fjord-11755.herokuapp.com/', 'NewsRUs is a website that enables users to quickly search the guardian website and return a filtered list of Guardian news articles.','https://i.imgur.com/1Z4ayCE.png', 'yes');
 
 
 

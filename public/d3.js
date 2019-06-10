@@ -1,6 +1,6 @@
 
 var margin = [20, 120, 20, 140],
-    width = 650 - margin[1] - margin[3],
+    width = 750 - margin[1] - margin[3],
     height = 800 - margin[0] - margin[2],
     i = 0,
     duration = 1250,

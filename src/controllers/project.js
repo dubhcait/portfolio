@@ -23,10 +23,9 @@ exports.get = (req,res) => {
                     "type": "url",
                     "url": element["row_to_json"]["f4"]
                    },
-                { "name": `Software used: ${element["row_to_json"]["f6"]} `,
-                "type": "url",
-                "url": "#"
-
+                { "name": `${element["row_to_json"]["f5"]}`,
+                    "type": "url",
+                    "url": element["row_to_json"]["f4"]
                 }],
                 "name": element["row_to_json"]["f2"],
                 "type" : "folder"};
