@@ -1,25 +1,30 @@
 # portfolio
 
 
-This is my personal cv, please feel free to check it out: https://kateportfolio.herokuapp.com/
+This is an add on for my cv and portfolio website, 
+please feel free to check out my website here: https://kateportfolio.herokuapp.com/
+And if you would like to see my CV please get in contact, either throught my portfolio website contact form or
+by way to get in contact is via email: dubhcait@live.ie
 
-Further information on projects I have done is below. 
+A list of my completed projects are below. 
 
 ## Projects
 
 
-Tiltle:
+### LSx Action Planner App
 oneliner:
 Software:
 github repo: 
-website:
+website: Express, Airtable, React, Jest.js
 
 ### Dish
 ![](https://i.imgur.com/wjKlKEd.png)
-oneliner:
-Software:
-github repo: 
-website:
+A food sharing app to bring people together and reduce food wastage
+Software: Sass, Express, Handlebars.js, PostgreSQL, Travis.Ci, Jest.js, Codecov, Heroku
+
+github repo: https://github.com/dubhcait/dish
+
+website: https://community-dish.herokuapp.com/
 
 
 ### Smoothie bar
@@ -177,4 +182,3 @@ github repo: https://github.com/dubhcait/typingAn
 website: https://dubhcait.github.io/typingAn/
 
 
-Best way to get in contact is via email: dubhcait@live.ie
