@@ -1,332 +1,348 @@
 //SASS autocompile
 
-@import './variables';
-*{
-    box-sizing: border-box;
+@import "./variables";
+* {
+  box-sizing: border-box;
 }
 
 body {
-    background-color: $background-color;
-    font-family: $system-font;
-    font-size: $regular-size;
-    color: $font-color;
+  background-color: $background-color;
+  font-family: $system-font;
+  font-size: $regular-size;
+  color: $font-color;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-
 .header {
-   display: flex;
-   justify-content:space-evenly;
-    color: white;
-    width: 100%;
-    margin: 0 auto;
-    max-width: $max-width;
-    font-family: $decorative-font;
-    background-color: $background-color-darkest;
-    padding: $large;
-    padding-left: $base;
+  @include border;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+  max-width: $max-width;
+  font-family: $decorative-font;
+  background-color: $background-color-darkest;
+  padding: $large;
+  padding-left: $base;
 
-    h1{  font-size: $h1-size;}
-    h3{ font-size: $h2-size; }
-   
-    &_profile {
+  h1 {
+    font-size: $h1-size;
+  }
+  h3 {
+    font-size: $h2-size;
+  }
+
+  &_profile {
     width: $xx-large;
     height: $xx-large;
     border-radius: 50%;
     margin: 1em;
     margin-top: 0;
-    }
-
+  }
 }
 
-.content { 
-        width: 100%;
-        max-width: $max-width;
-        margin: 0 auto;
-        @include alignCenter;
-        flex-direction: column;
-        background-color: $background-color-darker;
-        padding: $tiny;
+.content {
+  @include border;
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  @include alignCenter;
+  flex-direction: column;
+  background-color: $background-color-darker;
+  padding: $tiny;
 
-        
-
-        img {
-            @include bigImg;
-            border-radius: $border-radius;
-            margin: $tiny;
-        }
-        video{
-            border-radius: $border-radius;
-            @include bigImg;
-            margin: $tiny;
-        }
-        p{ font-size: $regular-size;
-            color: $font-color;
-            margin: $tiny $small;
-        }
-        @media screen and (max-width: 410px) {
-            img, video {
-                @include smallImg;
-            }
-        }
-        @media screen and (min-width: 650px) 
-        { 
-                flex-direction: row;
-                    .second {
-                        order: 2;
-                        }
-            }
-
-        @media screen and (min-width: 700px) 
-        { padding: $small;
-            p { font-size: $h4-size;
-            }
-        
-        }
-   }
-
-   
-   .project {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 100vw;
-    padding: $small;
-    
-    @media screen and (min-width: 700px) 
-    { padding: $small;
-        width: 80vw;
-        max-width: $max-width;
-        background-color: $background-color;
-    }
-
-   
-
-}
-
-
-#body{
-    width: 100vw;
-    @media screen and (max-width: 700px) {
-        display: none;
-    }
-
-}
-.project-header{
-    &__font{
+  img {
+    @include bigImg;
+    border-radius: $border-radius;
     margin: $tiny;
+  }
+  video {
+    border-radius: $border-radius;
+    @include bigImg;
+    margin: $tiny;
+  }
+  p {
+    font-size: $regular-size;
+    color: $font-color;
+    margin: $tiny $small;
+  }
+  @media screen and (max-width: 410px) {
+    img,
+    video {
+      @include smallImg;
+    }
+  }
+  @media screen and (min-width: 650px) {
+    flex-direction: row;
+    .second {
+      order: 2;
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    padding: $small;
+    p {
+      font-size: $h4-size;
+    }
+  }
+}
+
+.project {
+  @include border;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100vw;
+  padding: $small;
+
+  @media screen and (min-width: 700px) {
+    padding: $small;
+    width: 80vw;
+    max-width: $max-width;
+    background-color: $background-color;
+  }
+}
+
+.software {
+  border: #fff solid 2px;
+  padding: 2px;
+  margin: 2px;
+}
+
+#body {
+  width: 100vw;
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+}
+.project-header {
+  &__font {
+    margin: auto;
     font-weight: bold;
     font-size: $h2-size;
     color: $background-color-darkest;
-}}
+    width: fit-content;
+  }
+  p{
+      margin: $small;
+  }
+  a {
+    text-decoration: underline;
+    color: $background-color-darkest;
+}
+}
 
-.mobile{ 
-   
-    display: none;
+.mobile {
+  display: none;
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+
+  @media screen and (max-width: 700px) {
+    display: inline;
+    background-color: $background-color-grey;
+  }
+
+  .content-m {
     width: 100%;
     max-width: $max-width;
     margin: 0 auto;
-   
-    @media screen and (max-width: 700px) {
-        display: inline;
-        background-color: $background-color-grey;
-    }
+    @include alignCenter;
+    flex-direction: column;
+    background-color: $background-color-grey;
+    padding: $tiny;
 
-    .content-m { 
-        width: 100%;
-        max-width: $max-width;
-        margin: 0 auto;
-        @include alignCenter;
-        flex-direction: column;
-        background-color: $background-color-grey;
+    img {
+      @include bigImg;
+      border-radius: $border-radius;
+      margin: $tiny;
+    }
+    video {
+      border-radius: $border-radius;
+      @include bigImg;
+      margin: $tiny;
+    }
+    div {
+      margin: $tiny $small;
+      color: #fff;
+      max-width: 455px;
+      a {
+        font-weight: bold;
         padding: $tiny;
-     
-    
-        
-    
-        img {
-            @include bigImg;
-            border-radius: $border-radius;
-            margin: $tiny;
-        }
-        video{
-            border-radius: $border-radius;
-            @include bigImg;
-            margin: $tiny;
-        }
-    div { margin: $tiny $small;
         color: #fff;
-
-        a{  font-weight: bold;
-            padding: $tiny;
-            color: #fff;
-        }
-        a:hover{
-            text-decoration-line: underline;
-        }
-        p{ font-size: $regular-size;    
-        }
-        h3 {font-size: $h4-size;
-            margin: $tiny 0;
-           font-weight: bold;}
-     }
-    
-        @media screen and (max-width: 410px) {
-            img, video {
-                @include smallImg;
-            }
-        }
-        @media screen and (min-width: 650px) 
-        { 
-                flex-direction: row;
-                    .second {
-                        order: 2;
-                        }
-            }
-    
-        @media screen and (min-width: 700px) 
-        { padding: $small;
-            p { font-size: $h4-size;
-            }
-        
-        }
+      }
+      a:hover {
+        text-decoration-line: underline;
+      }
+      p {
+        font-size: $regular-size;
+      }
+      h3 {
+        font-size: $h4-size;
+        margin: $tiny 0;
+        font-weight: bold;
+      }
     }
+
+    @media screen and (max-width: 410px) {
+      img,
+      video {
+        @include smallImg;
+      }
+    }
+
+    @media screen and (min-width: 700px) {
+      padding: $small;
+      p {
+        font-size: $h4-size;
+      }
+    }
+  }
 }
 
-
-  
 .node {
-    cursor: pointer;
-  }
-  
-  .node circle {
-    cursor: pointer;
-    fill: #fff;
-    stroke: steelblue;
-    stroke-width: 1.5px;
-  }
-  
-  .node text {
+  cursor: pointer;
+}
 
-    fill: $background-color-darkest;
-  }
-  
-  path.link {
-    fill: none;
-    stroke: #ccc;
-    stroke-width: 1px;
-  }
-  
+.node circle {
+  cursor: pointer;
+  fill: #fff;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  fill: $background-color-darkest;
+}
+
+path.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1px;
+}
 
 .faq {
-    display: flex;
-    align-items: center;
-   align-content: center;
-   flex-direction: column;
-   background-color: $background-color-light-grey;
-   width: 100vw;
-   max-width: $max-width;
-   margin: 0 auto;
+  @include border;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: $background-color-light-grey;
+  width: 100vw;
+  max-width: $max-width;
+  margin: 0 auto;
 
- button{
+  button {
     @include button;
- }
+  }
 
-
-    h5{  font-size: $h4-size;
-        color: $background-color-darker; 
-        margin-top: $small; 
-    }
-    &-container {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: $small;
-    }
+  h5 {
+    font-size: $h4-size;
+    color: $background-color-darker;
+    margin-top: $small;
+  }
+  &-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: $small;
+  }
 }
 
 .faq-question {
-   
-    width: 100%;
-    max-width: $max-width ;
+  width: 100%;
+  max-width: $max-width;
+  color: $background-color-darker;
+
+  h6 {
+    font-size: $small-size;
     color: $background-color-darker;
-   
-   h6{ font-size: $small-size;
-       color: $background-color-darker;
-       margin: $tiny;
-   }
-   p{ font-size: $small-size; }
+    margin: $tiny;
+  }
+  p {
+    font-size: $small-size;
+  }
 }
 
 .faq-answer {
-    display: none;
-    margin: $small;
-   
+  display: none;
+  margin: $small;
+}
+
+.contact_div {
+  @include border;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  width: 100vw;
+  max-width: $max-width;
+  margin: 0 auto;
 }
 
 .contact {
-    font-size: $h2-size;
-    margin: $small auto;
-    width: fit-content;
+  font-size: $h2-size;
+  margin: $small auto;
+  width: fit-content;
 }
 
-   #contact-form {
-    display: flex;
-    margin: 1em auto;
-    padding: $small;
-    flex-direction: column;
-    width: fit-content;
-   
-    border: solid $background-color-darker 2px;
-    
-    border-radius: $border-radius; 
-       
-    button{ 
-        margin: $small $tiny;
-        @include button;
+#contact-form {
+  display: flex;
+  margin: 1em auto;
+  padding: $small;
+  flex-direction: column;
+  width: fit-content;
 
-    }
-    label{  margin: $tiny; 
-        font-size: $h4-size;}
-    input,textarea{
-        font-family:$system-font; 
-        border-radius:  $border-radius-small; 
-        margin: 0 $tiny; 
-      width: 40vw;
-      max-width: 380px;
-      font-size: $h4-size;
-       
-    }
-    @media screen and (max-width: 650px) {
-        input,textarea{
-            width: 70vw; 
-        }  
-    }
-   }
+  border: solid $background-color-darker 2px;
 
+  border-radius: $border-radius;
+
+  button {
+    margin: $small $tiny;
+    @include button;
+  }
+  label {
+    margin: $tiny;
+    font-size: $h4-size;
+  }
+  input,
+  textarea {
+    font-family: $system-font;
+    border-radius: $border-radius-small;
+    margin: 0 $tiny;
+    width: 40vw;
+    max-width: 380px;
+    font-size: $h4-size;
+  }
+  @media screen and (max-width: 650px) {
+    input,
+    textarea {
+      width: 70vw;
+    }
+  }
+}
 
 .footer {
-    display: flex;
-    align-content: flex-end;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: $max-width;
-    font-size: $regular-size;
-    color: white;
+  @include border;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: $max-width;
+  font-size: $regular-size;
+  color: white;
+  padding: $small;
+  background-color: $background-color-darkest;
+  p {
     padding: $tiny;
-    background-color: $background-color-darkest;
-    a{
-        text-decoration: none;
-        color: white;
-    }
+  }
+  a {
+    text-decoration: underline;
+    color: white;
+  }
 }
-
-
-
-
-
-

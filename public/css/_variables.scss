@@ -47,6 +47,11 @@ $max-width: 950px;;
 
 $border-radius: 0.4em;
 $border-radius-small: 0.2em;
+
+@mixin border {
+border-left: black solid 2px;   
+border-right: black solid 2px;     
+}
 @mixin smallImg {
     height: 13em;
     width: 20em;
