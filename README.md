@@ -2,7 +2,7 @@
 
 
 This is an add on for my cv and portfolio website, 
-please feel free to check out my website here: https://kateportfolio.herokuapp.com/
+please feel free to check out my website here: https://kb-webdevelopment.herokuapp.com/
 And if you would like to see my CV please get in contact, either throught my portfolio website contact form or
 by way to get in contact is via email: dubhcait@live.ie
 
