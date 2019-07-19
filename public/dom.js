@@ -7,7 +7,7 @@ for (i = 0; i < faq.length; i++) {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
     if (!panel.style.display || panel.style.display == "none"){
-      panel.style.display = "inline";
+      panel.style.display = "flex";
     } else {
         panel.style.display = "none";
     } 

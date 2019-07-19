@@ -67,7 +67,7 @@ a {
     margin: $tiny;
   }
   p {
-    font-size: $regular-size;
+    font-size: $h4-size;
     color: $font-color;
     margin: $tiny $small;
   }
@@ -267,6 +267,22 @@ path.link {
 .faq-answer {
   display: none;
   margin: $small;
+ align-items: center;
+
+ @media screen and (max-width: 650px) {
+ flex-wrap: wrap;
+ justify-content: center;
+ }
+ p{
+    margin: $small; 
+    font-size: $h4-size;
+ 
+ }
+  img{
+    @include bigImg;
+    border-radius: $border-radius;
+  }
+
 }
 
 .contact_div {
