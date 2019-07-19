@@ -40,9 +40,10 @@ $small: 1.8em;
 $base: 2.5em;
 $large: 4em;
 $x-large: 5em;
-$xx-large: 7em;
+$xx-large: 25%;
 
 $max-width: 950px;;
+
 // border- radius
 
 $border-radius: 0.4em;
@@ -53,14 +54,19 @@ border-left: black solid 2px;
 border-right: black solid 2px;     
 }
 @mixin smallImg {
-    height: 13em;
-    width: 20em;
+    height: 70vw;
+    width: 80vw;
 }
 
 //logo
 @mixin bigImg {
-    height: 15em;
-    width: 25em;
+    height: 35vw;
+    width: 45vw;
+}
+
+@mixin midImg {
+    height: 45vw;
+    width: 35vw;
 }
 
 
