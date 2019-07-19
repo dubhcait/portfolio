@@ -15,6 +15,8 @@ a {
 }
 
 .header {
+  border-left: black solid 2px;
+  border-right: black solid 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -24,7 +26,7 @@ a {
   color: white;
   width: 100%;
   margin: 0 auto;
-  max-width: 950px;
+  max-width: 1200px;
   font-family: "Abril Fatface", Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   background-color: #282F37;
   padding: 4em;
@@ -40,16 +42,18 @@ a {
 }
 
 .header_profile {
-  width: 7em;
-  height: 7em;
+  width: 25%;
+  height: 25%;
   border-radius: 50%;
   margin: 1em;
   margin-top: 0;
 }
 
 .content {
+  border-left: black solid 2px;
+  border-right: black solid 2px;
   width: 100%;
-  max-width: 950px;
+  max-width: 1200px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,33 +73,38 @@ a {
 }
 
 .content img {
-  height: 15em;
-  width: 25em;
+  height: 35vw;
+  width: 45vw;
+  max-width: 540px;
+  max-height: 420px;
   border-radius: 0.4em;
   margin: 0.5em;
 }
 
 .content video {
   border-radius: 0.4em;
-  height: 15em;
-  width: 25em;
+  height: 35vw;
+  width: 45vw;
+  max-width: 540px;
+  max-height: 420px;
   margin: 0.5em;
 }
 
 .content p {
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #8E9DA5;
   margin: 0.5em 1.8em;
 }
 
-@media screen and (max-width: 410px) {
-  .content img, .content video {
-    height: 13em;
-    width: 20em;
+@media screen and (max-width: 600px) {
+  .content img,
+  .content video {
+    height: 70vw;
+    width: 80vw;
   }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 800px) {
   .content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -114,11 +123,13 @@ a {
     padding: 1.8em;
   }
   .content p {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 }
 
 .project {
+  border-left: black solid 2px;
+  border-right: black solid 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,9 +149,15 @@ a {
   .project {
     padding: 1.8em;
     width: 80vw;
-    max-width: 950px;
+    max-width: 1200px;
     background-color: #F4F4F4;
   }
+}
+
+.software {
+  border: #fff solid 2px;
+  padding: 2px;
+  margin: 2px;
 }
 
 #body {
@@ -154,16 +171,28 @@ a {
 }
 
 .project-header__font {
-  margin: 0.5em;
+  margin: auto;
   font-weight: bold;
   font-size: 1.5rem;
+  color: #282F37;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.project-header p {
+  margin: 1.8em;
+}
+
+.project-header a {
+  text-decoration: underline;
   color: #282F37;
 }
 
 .mobile {
   display: none;
   width: 100%;
-  max-width: 950px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -176,7 +205,7 @@ a {
 
 .mobile .content-m {
   width: 100%;
-  max-width: 950px;
+  max-width: 1200px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,22 +225,25 @@ a {
 }
 
 .mobile .content-m img {
-  height: 15em;
-  width: 25em;
+  height: 45vw;
+  width: 35vw;
   border-radius: 0.4em;
   margin: 0.5em;
 }
 
 .mobile .content-m video {
   border-radius: 0.4em;
-  height: 15em;
-  width: 25em;
+  height: 35vw;
+  width: 45vw;
+  max-width: 540px;
+  max-height: 420px;
   margin: 0.5em;
 }
 
 .mobile .content-m div {
   margin: 0.5em 1.8em;
   color: #fff;
+  max-width: 455px;
 }
 
 .mobile .content-m div a {
@@ -230,30 +262,9 @@ a {
 }
 
 .mobile .content-m div h3 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   margin: 0.5em 0;
   font-weight: bold;
-}
-
-@media screen and (max-width: 410px) {
-  .mobile .content-m img, .mobile .content-m video {
-    height: 13em;
-    width: 20em;
-  }
-}
-
-@media screen and (min-width: 650px) {
-  .mobile .content-m {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .mobile .content-m .second {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
 }
 
 @media screen and (min-width: 700px) {
@@ -261,7 +272,7 @@ a {
     padding: 1.8em;
   }
   .mobile .content-m p {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -287,6 +298,8 @@ path.link {
 }
 
 .faq {
+  border-left: black solid 2px;
+  border-right: black solid 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,7 +314,7 @@ path.link {
           flex-direction: column;
   background-color: rgba(173, 186, 191, 0.4);
   width: 100vw;
-  max-width: 950px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -327,7 +340,7 @@ path.link {
 }
 
 .faq h5 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   color: #37434D;
   margin-top: 1.8em;
 }
@@ -346,7 +359,7 @@ path.link {
 
 .faq-question {
   width: 100%;
-  max-width: 950px;
+  max-width: 1200px;
   color: #37434D;
 }
 
@@ -363,6 +376,52 @@ path.link {
 .faq-answer {
   display: none;
   margin: 1.8em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 650px) {
+  .faq-answer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.faq-answer p {
+  margin: 1.8em;
+  font-size: 1.25rem;
+}
+
+.faq-answer img {
+  height: 35vw;
+  width: 45vw;
+  max-width: 540px;
+  max-height: 420px;
+  border-radius: 0.4em;
+}
+
+.contact_div {
+  border-left: black solid 2px;
+  border-right: black solid 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .contact {
@@ -414,44 +473,53 @@ path.link {
 
 #contact-form label {
   margin: 0.5em;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
-#contact-form input, #contact-form textarea {
+#contact-form input,
+#contact-form textarea {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   border-radius: 0.2em;
   margin: 0 0.5em;
   width: 40vw;
   max-width: 380px;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
 @media screen and (max-width: 650px) {
-  #contact-form input, #contact-form textarea {
+  #contact-form input,
+  #contact-form textarea {
     width: 70vw;
   }
 }
 
 .footer {
+  border-left: black solid 2px;
+  border-right: black solid 2px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
-  max-width: 950px;
+  max-width: 1200px;
   font-size: 1rem;
   color: white;
-  padding: 0.5em;
+  padding: 1.8em;
   background-color: #282F37;
 }
 
+.footer p {
+  padding: 0.5em;
+}
+
 .footer a {
-  text-decoration: none;
+  text-decoration: underline;
   color: white;
 }
 /*# sourceMappingURL=style.css.map */

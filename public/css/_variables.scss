@@ -30,7 +30,7 @@ $system-font;
 
 $h1-size: 2.5rem;
 $h2-size: 1.5rem;
-$h4-size: 1.125rem;
+$h4-size: 1.25rem;
 $regular-size: 1rem;
 $small-size: 0.875rem;
 
@@ -40,22 +40,35 @@ $small: 1.8em;
 $base: 2.5em;
 $large: 4em;
 $x-large: 5em;
-$xx-large: 7em;
+$xx-large: 25%;
 
-$max-width: 950px;;
+$max-width: 1200px;;
+
 // border- radius
 
 $border-radius: 0.4em;
 $border-radius-small: 0.2em;
+
+@mixin border {
+border-left: black solid 2px;   
+border-right: black solid 2px;     
+}
 @mixin smallImg {
-    height: 13em;
-    width: 20em;
+    height: 70vw;
+    width: 80vw;
 }
 
 //logo
 @mixin bigImg {
-    height: 15em;
-    width: 25em;
+    height: 35vw;
+    width: 45vw;
+    max-width: 540px;
+    max-height: 420px;
+}
+
+@mixin midImg {
+    height: 45vw;
+    width: 35vw;
 }
 
 
