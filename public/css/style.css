@@ -73,7 +73,7 @@ a {
 }
 
 .content img {
-  height: 35vw;
+  height: auto;
   width: 45vw;
   max-width: 540px;
   max-height: 420px;
@@ -83,7 +83,7 @@ a {
 
 .content video {
   border-radius: 0.4em;
-  height: 35vw;
+  height: auto;
   width: 45vw;
   max-width: 540px;
   max-height: 420px;
@@ -233,7 +233,7 @@ a {
 
 .mobile .content-m video {
   border-radius: 0.4em;
-  height: 35vw;
+  height: auto;
   width: 45vw;
   max-width: 540px;
   max-height: 420px;
@@ -397,7 +397,7 @@ path.link {
 }
 
 .faq-answer img {
-  height: 35vw;
+  height: auto;
   width: 45vw;
   max-width: 540px;
   max-height: 420px;

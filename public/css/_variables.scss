@@ -60,7 +60,7 @@ border-right: black solid 2px;
 
 //logo
 @mixin bigImg {
-    height: 35vw;
+    height: auto;
     width: 45vw;
     max-width: 540px;
     max-height: 420px;
