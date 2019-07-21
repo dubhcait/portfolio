@@ -13,3 +13,25 @@ for (i = 0; i < faq.length; i++) {
     } 
   });
 }
+
+const projectDisplay = document.getElementsByClassName(
+  "project-header__button"
+);
+
+const svg = document.getElementById("body");
+const list = document.getElementsByClassName("mobile")[0]
+
+console.log(list);
+
+for (let i = 0; i < projectDisplay.length; i++) {
+  projectDisplay[i].addEventListener("click", () => {
+    if (i == 0) {
+      svg.style.display = "block";
+      list.style.display = "none";
+    }
+    if (i == 1) {
+      svg.style.display = "none";
+      list.style.display = "inline";
+    }
+  });
+}

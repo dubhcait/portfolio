@@ -155,13 +155,14 @@ a {
 }
 
 .software {
-  border: #fff solid 2px;
+  border: #4C5866 solid 2px;
   padding: 2px;
   margin: 2px;
 }
 
 #body {
-  width: 100vw;
+  width: 80vw;
+  margin: auto;
 }
 
 @media screen and (max-width: 700px) {
@@ -170,18 +171,71 @@ a {
   }
 }
 
-.project-header__font {
-  margin: auto;
+.project-header {
+  border-left: black solid 2px;
+  border-right: black solid 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100vw;
+  padding: 1.8em;
   font-weight: bold;
-  font-size: 1.5rem;
-  color: #282F37;
+}
+
+@media screen and (max-width: 700px) {
+  .project-header div {
+    display: none;
+  }
+}
+
+.project-header p {
+  margin: 1.8em auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-.project-header p {
-  margin: 1.8em;
+.project-header h3 {
+  margin: 1.8em auto;
+  font-size: 1.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #282F37;
+}
+
+.project-header__button {
+  margin: 1.8em 0.5em;
+  border: 1px solid #d1dcdf;
+  border-radius: 3px;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  background-color: #f2f5f6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f5f6), to(#c8d7dc));
+  background-image: linear-gradient(to bottom, #f2f5f6, #c8d7dc);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f2f5f6, endColorstr=#c8d7dc);
+  text-align: center;
+  width: 15em;
+}
+
+.project-header__button:hover {
+  border: 1px solid #b6c7cc;
+  background-color: #d4dee1;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d4dee1), to(#a9c0c8));
+  background-image: linear-gradient(to bottom, #d4dee1, #a9c0c8);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#d4dee1, endColorstr=#a9c0c8);
 }
 
 .project-header a {
@@ -190,6 +244,8 @@ a {
 }
 
 .mobile {
+  border-left: black solid 2px;
+  border-right: black solid 2px;
   display: none;
   width: 100%;
   max-width: 1200px;
@@ -199,11 +255,12 @@ a {
 @media screen and (max-width: 700px) {
   .mobile {
     display: inline;
-    background-color: #ADBABF;
   }
 }
 
 .mobile .content-m {
+  border-left: black solid 2px;
+  border-right: black solid 2px;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -220,7 +277,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #ADBABF;
   padding: 0.5em;
 }
 
@@ -242,14 +298,14 @@ a {
 
 .mobile .content-m div {
   margin: 0.5em 1.8em;
-  color: #fff;
+  color: #4C5866;
   max-width: 455px;
 }
 
 .mobile .content-m div a {
   font-weight: bold;
   padding: 0.5em;
-  color: #fff;
+  color: #4C5866;
 }
 
 .mobile .content-m div a:hover {
