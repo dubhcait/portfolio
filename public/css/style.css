@@ -99,7 +99,7 @@ a {
 @media screen and (max-width: 600px) {
   .content img,
   .content video {
-    height: 70vw;
+    height: auto;
     width: 80vw;
   }
 }
@@ -281,7 +281,7 @@ a {
 }
 
 .mobile .content-m img {
-  height: 45vw;
+  height: auto;
   width: 35vw;
   border-radius: 0.4em;
   margin: 0.5em;

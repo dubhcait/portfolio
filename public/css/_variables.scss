@@ -54,7 +54,7 @@ border-left: black solid 2px;
 border-right: black solid 2px;     
 }
 @mixin smallImg {
-    height: 70vw;
+    height: auto;
     width: 80vw;
 }
 
@@ -67,7 +67,7 @@ border-right: black solid 2px;
 }
 
 @mixin midImg {
-    height: 45vw;
+    height: auto;
     width: 35vw;
 }
 
