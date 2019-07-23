@@ -6,6 +6,7 @@ const projects = require("./project");
 const projectsMobile = require("./project-mobile");
 const contact = require("./contact");
 const error = require("./error");
+const result = require("./results");
 
 const app = express();
 const router = express.Router();
@@ -17,13 +18,13 @@ router.get("/", home.get);
 
 router.get("/projects", projects.get);
 router.get("/mobile", projectsMobile.get);
+router.get("/contact-success", result.get);
+router.get("/contact-failure", result.failure);
 
 // POST route from contact form
 // router.post('/contact', contact.post );
 
 router.post("/contact", (req, res, next) => {
-
-   
   check("name")
     .not()
     .isEmpty()
@@ -35,13 +36,13 @@ router.post("/contact", (req, res, next) => {
       .isEmail()
       .escape()
       .withMessage("Your should input a email");
-      
+
   const errors = validationResult(req.body);
 
   if (!errors.isEmpty()) {
     return res.status(422).jsonp(errors.array());
   } else {
-    console.log("/contact")
+    console.log("/contact");
     contact.post(req, res);
   }
 });

@@ -117,6 +117,8 @@ a {
 #body {
   width: 80vw;
   margin: auto;
+  max-width: 1200px;
+  width: 100vw;
   @media screen and (max-width: 700px) {
     display: none;
   }
@@ -388,5 +390,15 @@ path.link {
   a {
     text-decoration: underline;
     color: white;
+  }
+}
+
+.thanksMeg{
+  text-align: center;
+  font-size: $regular-size;
+  margin: $small;
+  a{
+    color: $font-color;
+    text-decoration: underline;
   }
 }
