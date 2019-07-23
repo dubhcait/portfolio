@@ -96,7 +96,7 @@ a {
   margin: 0.5em 1.8em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .content img,
   .content video {
     height: auto;
@@ -287,6 +287,13 @@ a {
   margin: 0.5em;
 }
 
+@media screen and (max-width: 800px) {
+  .mobile .content-m img {
+    height: auto;
+    width: 80vw;
+  }
+}
+
 .mobile .content-m video {
   border-radius: 0.4em;
   height: auto;
@@ -458,6 +465,13 @@ path.link {
   max-width: 540px;
   max-height: 420px;
   border-radius: 0.4em;
+}
+
+@media screen and (max-width: 600px) {
+  .faq-answer img {
+    height: auto;
+    width: 80vw;
+  }
 }
 
 .contact_div {

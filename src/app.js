@@ -3,7 +3,7 @@ const handlebars = require('express-handlebars');
 const path = require('path');
 const bodyParser = require('body-parser');
 const compression = require('compression');
-
+const helmet = require("helmet");
 
 
 const controllers = require('./controllers');
@@ -11,11 +11,16 @@ const controllers = require('./controllers');
 
 const app = express();
 
+const middleware = [
+    helmet(),
+    compression(),
+    bodyParser.urlencoded({ extended: false }),
+    bodyParser.json(),
+  ];
+  app.use(middleware);
+
 app.disable('x-powered -by');
-app.use(compression());
 app.set('views', path.join(__dirname,'views'));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
 app.set('view engine', 'hbs');
 app.engine(
     'hbs',

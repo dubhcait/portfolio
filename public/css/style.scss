@@ -70,7 +70,7 @@ a {
     color: $font-color;
     margin: $tiny $small;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     img,
     video {
       @include smallImg;
@@ -185,6 +185,13 @@ a {
       border-radius: $border-radius;
       margin: $tiny;
     }
+
+    @media screen and (max-width: 800px) {
+      img {
+        @include smallImg;
+      }
+    }
+
     video {
       border-radius: $border-radius;
       @include bigImg;
@@ -210,6 +217,8 @@ a {
         margin: $tiny 0;
         font-weight: bold;
       }
+
+      
     }
 
     @media screen and (min-width: 700px) {
@@ -301,6 +310,11 @@ path.link {
   img {
     @include bigImg;
     border-radius: $border-radius;
+  }
+  @media screen and (max-width: 600px) {
+    img {
+      @include smallImg;
+    }
   }
 }
 
