@@ -96,7 +96,7 @@ a {
   margin: 0.5em 1.8em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .content img,
   .content video {
     height: auto;
@@ -163,6 +163,8 @@ a {
 #body {
   width: 80vw;
   margin: auto;
+  max-width: 1200px;
+  width: 100vw;
 }
 
 @media screen and (max-width: 700px) {
@@ -285,6 +287,13 @@ a {
   width: 35vw;
   border-radius: 0.4em;
   margin: 0.5em;
+}
+
+@media screen and (max-width: 800px) {
+  .mobile .content-m img {
+    height: auto;
+    width: 80vw;
+  }
 }
 
 .mobile .content-m video {
@@ -460,6 +469,13 @@ path.link {
   border-radius: 0.4em;
 }
 
+@media screen and (max-width: 600px) {
+  .faq-answer img {
+    height: auto;
+    width: 80vw;
+  }
+}
+
 .contact_div {
   border-left: black solid 2px;
   border-right: black solid 2px;
@@ -577,5 +593,16 @@ path.link {
 .footer a {
   text-decoration: underline;
   color: white;
+}
+
+.thanksMeg {
+  text-align: center;
+  font-size: 1rem;
+  margin: 1.8em;
+}
+
+.thanksMeg a {
+  color: #8E9DA5;
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */

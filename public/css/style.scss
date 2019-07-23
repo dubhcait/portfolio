@@ -70,7 +70,7 @@ a {
     color: $font-color;
     margin: $tiny $small;
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     img,
     video {
       @include smallImg;
@@ -117,6 +117,8 @@ a {
 #body {
   width: 80vw;
   margin: auto;
+  max-width: 1200px;
+  width: 100vw;
   @media screen and (max-width: 700px) {
     display: none;
   }
@@ -185,6 +187,13 @@ a {
       border-radius: $border-radius;
       margin: $tiny;
     }
+
+    @media screen and (max-width: 800px) {
+      img {
+        @include smallImg;
+      }
+    }
+
     video {
       border-radius: $border-radius;
       @include bigImg;
@@ -210,6 +219,8 @@ a {
         margin: $tiny 0;
         font-weight: bold;
       }
+
+      
     }
 
     @media screen and (min-width: 700px) {
@@ -302,6 +313,11 @@ path.link {
     @include bigImg;
     border-radius: $border-radius;
   }
+  @media screen and (max-width: 600px) {
+    img {
+      @include smallImg;
+    }
+  }
 }
 
 .contact_div {
@@ -374,5 +390,15 @@ path.link {
   a {
     text-decoration: underline;
     color: white;
+  }
+}
+
+.thanksMeg{
+  text-align: center;
+  font-size: $regular-size;
+  margin: $small;
+  a{
+    color: $font-color;
+    text-decoration: underline;
   }
 }
