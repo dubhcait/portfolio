@@ -1,4 +1,4 @@
-# Personal Portfolio
+# Personal Portfolio [![Known Vulnerabilities](https://snyk.io//test/github/dubhcait/portfolio/badge.svg?targetFile=package.json)](https://snyk.io//test/github/dubhcait/portfolio?targetFile=package.json)
 
 
 This is an add on for my cv and portfolio website, 
