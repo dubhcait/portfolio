@@ -229,7 +229,7 @@ a {
   background-image: linear-gradient(to bottom, #f2f5f6, #c8d7dc);
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f2f5f6, endColorstr=#c8d7dc);
   text-align: center;
-  width: 15em;
+  width: 20em;
 }
 
 .project-header__button:hover {
