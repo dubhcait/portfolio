@@ -20,11 +20,11 @@ CREATE TABLE projects (
 
 INSERT INTO projects (project, software, project_github, project_url, description, img_src, team_project )
 VALUES
-    ('Smoothie bar', 'Postgres, Express', 'https://github.com/dubhcait/Smoothie-bar', 'https://smoothiebar.herokuapp.com/','A FAC week 8 project build over a day and a half, by a team of 4. ', 'https://i.imgur.com/xbUjZ5a.png' , 'yes'),
+    ('Smoothiebar', 'Postgres, Express', 'https://github.com/dubhcait/Smoothie-bar', 'https://smoothiebar.herokuapp.com/','A FAC week 8 project build over a day and a half, by a team of 4. ', 'https://i.imgur.com/xbUjZ5a.png' , 'yes'),
    ('Dish', 'Postgres, Express, handlebars', 'https://github.com/FAC-Sixteen/dish','https://community-dish.herokuapp.com/',  'A food sharing app to bring people together and reduce food wastage.A FAC student project build.', 'https://i.imgur.com/wjKlKEd.png', 'yes'),
    ('The-Long-Grass', 'React',  'https://github.com/FAC-Sixteen/RK-The-Long-Grass', 'https://the-long-grass.netlify.com/', 'Ready for a Poké Adventure? The long grass is waiting. This is a pokémon where you capture pokemon by clicking.', 'https://i.imgur.com/shsS0Pg.png' , 'yes'),
-   ('FacQuotes', 'Postgres, Express', 'https://github.com/dubhcait/facQuotes', 'https://facquotes.herokuapp.com/', 'A personal project to gather quotes about Founders and coders, that will display automatically. Software: Postgres, Express','https://i.imgur.com/ZrLbO7m.png', 'yes'),
-  ('NewsRUs', 'Node.js Heroku', 'https://github.com/dubhcait/Week5-purple-sloths', 'https://calm-fjord-11755.herokuapp.com/', 'NewsRUs is a website that enables users to quickly search the guardian website and return a filtered list of Guardian news articles.','https://i.imgur.com/1Z4ayCE.png', 'yes');
+   ('Nova App', 'MongoDB, Express', 'https://github.com/dubhcait/Nova-Foundation', 'https://nova-foundation-app.herokuapp.com/', 'Nova aims to help families that have experienced baby loss at any stage','https://i.imgur.com/ZrLbO7m.png', 'yes'),
+  ('LSX App', 'Airtable, React', 'https://github.com/dubhcait/LSx', 'https://fac16-lsx-action-planner.herokuapp.com/', 'A mobile-based app to help users create an action plan, to organise and facilitate change.','https://i.imgur.com/1Z4ayCE.png', 'yes');
 
 
 
