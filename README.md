@@ -1,4 +1,4 @@
-# Personal Portfolio ![Codacy Badge](https://api.codacy.com/project/badge/Grade/126ebb2a43d948b093cc91c9bfecbf68)[![Known Vulnerabilities](https://snyk.io//test/github/dubhcait/portfolio/badge.svg?targetFile=package.json)](https://snyk.io//test/github/dubhcait/portfolio?targetFile=package.json)
+# Personal Portfolio ![Codacy Badge](https://api.codacy.com/project/badge/Grade/126ebb2a43d948b093cc91c9bfecbf68)[![DeepScan grade](https://deepscan.io/api/teams/5584/projects/7423/branches/74815/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5584&pid=7423&bid=74815) [![Known Vulnerabilities](https://snyk.io//test/github/dubhcait/portfolio/badge.svg?targetFile=package.json)](https://snyk.io//test/github/dubhcait/portfolio?targetFile=package.json)
 
 
 
