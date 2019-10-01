@@ -42,7 +42,7 @@ $large: 4em;
 $x-large: 5em;
 $xx-large: 25%;
 
-$max-width: 1200px;;
+$max-width: 1200px;
 
 // border- radius
 
@@ -50,8 +50,8 @@ $border-radius: 0.4em;
 $border-radius-small: 0.2em;
 
 @mixin border {
-border-left: black solid 2px;   
-border-right: black solid 2px;     
+border-left: black solid 2px;
+border-right: black solid 2px;
 }
 @mixin smallImg {
     height: auto;
@@ -82,7 +82,7 @@ border-right: black solid 2px;
  border:1px solid #d1dcdf; -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
- padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;font-weight:bold;
+ padding: 10px; text-decoration:none; display:inline-block;font-weight:bold;
         background-color: #f2f5f6; background-image: -webkit-gradient(linear, left top, left bottom, from(#f2f5f6), to(#c8d7dc));
         background-image: -webkit-linear-gradient(top, #f2f5f6, #c8d7dc);
         background-image: -moz-linear-gradient(top, #f2f5f6, #c8d7dc);
@@ -91,7 +91,7 @@ border-right: black solid 2px;
         background-image: linear-gradient(to bottom, #f2f5f6, #c8d7dc);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f2f5f6, endColorstr=#c8d7dc);
         &:hover {
             border:1px solid #b6c7cc;
-            background-color: #d4dee1; 
+            background-color: #d4dee1;
             background-image: -webkit-gradient(linear, left top, left bottom, from(#d4dee1), to(#a9c0c8));
             background-image: -webkit-linear-gradient(top, #d4dee1, #a9c0c8);
             background-image: -moz-linear-gradient(top, #d4dee1, #a9c0c8);
