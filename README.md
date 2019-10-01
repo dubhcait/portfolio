@@ -1,4 +1,5 @@
-# Personal Portfolio [![Known Vulnerabilities](https://snyk.io//test/github/dubhcait/portfolio/badge.svg?targetFile=package.json)](https://snyk.io//test/github/dubhcait/portfolio?targetFile=package.json)
+# Personal Portfolio ![Codacy Badge](https://api.codacy.com/project/badge/Grade/126ebb2a43d948b093cc91c9bfecbf68)[![Known Vulnerabilities](https://snyk.io//test/github/dubhcait/portfolio/badge.svg?targetFile=package.json)](https://snyk.io//test/github/dubhcait/portfolio?targetFile=package.json)
+
 
 
 This is an add on for my cv and portfolio website, 
