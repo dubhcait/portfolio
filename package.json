@@ -23,7 +23,7 @@
     "escape-html": "^1.0.3",
     "express-validator": "^6.1.1",
     "helmet": "^3.19.0",
-    "pg": "^7.10.0"
+    "pg": "^8.0.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
