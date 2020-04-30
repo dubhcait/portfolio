@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",
-    "devstart": "nodemon -q src/"
+    "devstart": "nodemon -q src/",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -23,9 +25,11 @@
     "escape-html": "^1.0.3",
     "express-validator": "^6.1.1",
     "helmet": "^3.19.0",
-    "pg": "^7.10.0"
+    "pg": "^7.10.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
-  }
+  },
+  "snyk": true
 }
