@@ -1,0 +1,29 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: express-validator
+    versions:
+    - 6.10.0
+    - 6.9.2
+  - dependency-name: express-handlebars
+    versions:
+    - 5.2.0
+    - 5.2.1
+  - dependency-name: nodemailer
+    versions:
+    - 6.4.17
+    - 6.4.18
+  - dependency-name: helmet
+    versions:
+    - 4.4.1
+  - dependency-name: pg
+    versions:
+    - 8.5.1
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
